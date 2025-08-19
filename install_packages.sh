@@ -13,6 +13,7 @@ PACKAGES=(
 	fzf
 	ghostty
   firefox
+  ttf-jetbrains-nerd-font
 
 	zip
 	unzip
@@ -23,6 +24,7 @@ PACKAGES=(
 	bat
 	curl
 	wget
+  less
 
 	python
 	python-pip

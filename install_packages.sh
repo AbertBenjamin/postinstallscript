@@ -11,9 +11,10 @@ PACKAGES=(
 	stow
 	github-cli
 	fzf
-	ghostty
+	# ghostty
 	# firefox
 	ttf-jetbrains-mono-nerd
+  direnv
 
 	zip
 	unzip
@@ -41,6 +42,13 @@ PACKAGES=(
 	foot
 	alacritty
 	network-manager-applet
+
+  # login manager
+  sddm
+  qt6-5compat
+  qt6-declarative 
+  qt6-svg
+
 	dmenu
 	xclip
 	wl-clipboard

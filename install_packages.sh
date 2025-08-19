@@ -12,8 +12,8 @@ PACKAGES=(
 	github-cli
 	fzf
 	ghostty
-  firefox
-  ttf-jetbrains-nerd-font
+	# firefox
+	ttf-jetbrains-mono-nerd
 
 	zip
 	unzip
@@ -24,7 +24,7 @@ PACKAGES=(
 	bat
 	curl
 	wget
-  less
+	less
 
 	python
 	python-pip
@@ -36,19 +36,19 @@ PACKAGES=(
 	gcc
 	clang
 
-  #sway packages
-  xterm
-  foot
-  alacritty
-  network-manager-applet
-  dmenu
+	#sway packages
+	xterm
+	foot
+	alacritty
+	network-manager-applet
+	dmenu
 	xclip
 	wl-clipboard
-  mako
-  grim
-  slurp
-  wofi
-  waybar
+	mako
+	grim
+	slurp
+	wofi
+	waybar
 
 
 	)

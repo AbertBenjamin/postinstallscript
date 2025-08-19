@@ -27,7 +27,8 @@ echo "setting up temp .zshrc"
 echo "source ~/.config/zsh/.zshrc" > ~/.zshrc
 
 echo "====starting zsh"
-chsh -s $(which zsh) $USERNAME
+echo "setting zsh default shell"
+sudo chsh -s $(which zsh) $USERNAME
 
 exec tmux new-session -s main -c ~ zsh
 clear

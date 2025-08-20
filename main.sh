@@ -16,19 +16,18 @@ if [ "$1" != "--continue" ]; then
 	exec bash "$0" --continue
 fi
 
-
 # create temp .zshrc
 touch ~/.zshrc
 
 bash  ~/postinstallscript/setup_dotfiles.sh
 
-
 echo "setting up temp .zshrc"
 echo "source ~/.config/zsh/.zshrc" > ~/.zshrc
 
-echo "====starting zsh"
 echo "setting zsh default shell"
 sudo chsh -s $(which zsh) $USERNAME
+
+sudo systemctl enable sddm.service
 
 exec tmux new-session -s main -c ~ zsh
 clear

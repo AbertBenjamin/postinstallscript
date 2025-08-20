@@ -11,10 +11,13 @@ PACKAGES=(
 	stow
 	github-cli
 	fzf
-	# ghostty
-	# firefox
+  zoxide
+  eza
+	ghostty
+	firefox
 	ttf-jetbrains-mono-nerd
   direnv
+  kubectl
 
 	zip
 	unzip
@@ -57,29 +60,16 @@ PACKAGES=(
 	slurp
 	wofi
 	waybar
-
+  mako
+  
+  btop
+  # bluetuith
+  brightnessctl
+  grim
+  slurp
 
 	)
 
 sudo pacman -S --noconfirm --needed "${PACKAGES[@]}"
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

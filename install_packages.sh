@@ -45,6 +45,7 @@ PACKAGES=(
 	foot
 	alacritty
 	network-manager-applet
+  swaybg
 
   # login manager
   sddm
@@ -69,6 +70,9 @@ PACKAGES=(
   slurp
 
 	)
+
+# sdkman install
+sudo curl -s "https://get.sdkman.io?ci=true&rcupdate=false" | bash
 
 sudo pacman -S --noconfirm --needed "${PACKAGES[@]}"
 

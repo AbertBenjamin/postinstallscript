@@ -27,9 +27,19 @@ echo "source ~/.config/zsh/.zshrc" > ~/.zshrc
 echo "setting zsh default shell"
 sudo chsh -s $(which zsh) $USERNAME
 
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+
+sdk install java
+sdk install kotlin
+sdk install maven
+
 sudo systemctl enable sddm.service
 
-exec tmux new-session -s main -c ~ zsh
+git clone https://aur.archlinux.org/yay.git ~
+cd yay
+makepkg -si
+
 clear
 
 echo "please reboot"

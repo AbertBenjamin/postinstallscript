@@ -18,6 +18,7 @@ PACKAGES=(
 	ttf-jetbrains-mono-nerd
   direnv
   kubectl
+  fastfetch
 
 	zip
 	unzip

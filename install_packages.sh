@@ -11,6 +11,7 @@ PACKAGES=(
 	stow
 	github-cli
 	fzf
+  yazi
   zoxide
   eza
 	ghostty

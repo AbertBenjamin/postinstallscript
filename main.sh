@@ -2,6 +2,17 @@
 
 set -e
 
+BASE_URL="https://raw.githubusercontent.com/AbertBenjamin/postinstallscript/master"
+
+mkdir -p ~/postinstallscript
+cd ~/postinstallscript
+
+for script in install_packsges setup_dotfiles.sh; do
+  echo "Fetching $script..."
+  wget -qO "$script" "$BASE_URL/$script"
+  chmod +x "$script"
+done
+
 sudo pacman -Syu --noconfirm
 
 chmod +x ~/postinstallscript/install_packages.sh
